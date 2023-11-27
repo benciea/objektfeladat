@@ -8,9 +8,10 @@ let fizetes = {
 let osszfiz = 0;
 function fizetesekOsszeadas(obj){
 for(const [key, value] of Object.entries(obj)){
+    console.log(`${key}: ${value}`)
     osszfiz += value;
     }
 }
 
 fizetesekOsszeadas(fizetes);
-console.log(osszfiz);
+console.log(`Összfizetés: ${osszfiz}`);
